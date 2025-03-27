@@ -1,0 +1,26 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/roman91DE/hofkit
+cpu: Apple M1
+BenchmarkMap/Hofkit-8    	  162891	      7357 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkMap/Native-8    	  166444	      7282 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkFilter/Hofkit-8 	  117916	     10095 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkFilter/Native-8 	   72974	     16373 ns/op	  128249 B/op	      16 allocs/op
+BenchmarkReduce/Hofkit-8 	  381789	      3145 ns/op	       0 B/op	       0 allocs/op
+BenchmarkReduce/Native-8 	  376192	      3233 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAll/Hofkit-8    	  381878	      3146 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAll/Native-8    	  382228	      3140 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAny/Hofkit-8    	1000000000	         0.6347 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAny/Native-8    	1000000000	         0.6275 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFind/Hofkit-8   	  759205	      1588 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFind/Native-8   	  749748	      1599 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFindIndex/Hofkit-8         	  752720	      1601 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFindIndex/Native-8         	  748531	      1593 ns/op	       0 B/op	       0 allocs/op
+BenchmarkTakeWhile/Hofkit-8         	  107370	     11307 ns/op	  128249 B/op	      16 allocs/op
+BenchmarkTakeWhile/Native-8         	  100730	     11911 ns/op	  128249 B/op	      16 allocs/op
+BenchmarkForEach/Hofkit-8           	  380239	      3161 ns/op	       0 B/op	       0 allocs/op
+BenchmarkForEach/Native-8           	  379430	      3144 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPartitionBy/Hofkit-8       	   43186	     29149 ns/op	  256497 B/op	      32 allocs/op
+BenchmarkPartitionBy/Native-8       	   40803	     28338 ns/op	  256497 B/op	      32 allocs/op
+PASS
+ok  	github.com/roman91DE/hofkit	25.625s
