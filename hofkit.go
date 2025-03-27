@@ -76,3 +76,9 @@ func TakeWhile[T any](p func(T) bool, xs []T) []T {
 	}
 	return result
 }
+
+func ForEach[T any](f func(T), xs []T) {
+	for _, it := range xs {
+		f(it)
+	}
+}
