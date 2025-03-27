@@ -147,12 +147,17 @@ Plots and performance reports are generated with the Python script [`plot_bench.
 
 Each benchmark is run on 10,000-element slices with non-trivial logic to stress CPU and memory.
 
-Results using a M1 2020 MacBookPro:
 
-[Memory Allocations](./benchmark/darwin_arm64_arm_20250327_123742/benchmark_allocs_op.png)
-[Memory Consumption](./benchmark/darwin_arm64_arm_20250327_123742/benchmark_B_op.png)
-[Time Consumption](./benchmark/darwin_arm64_arm_20250327_123742/benchmark_ns_op.png)
+### 📈 Benchmark Results (M1 2020 MacBook Pro)
 
+#### Memory Allocations
+![allocs](./benchmark/darwin_arm64_arm_20250327_123742/benchmark_allocs_op.png)
+
+#### Memory Consumption
+![bytes](./benchmark/darwin_arm64_arm_20250327_123742/benchmark_B_op.png)
+
+#### Time per Operation
+![ns](./benchmark/darwin_arm64_arm_20250327_123742/benchmark_ns_op.png)
 
 ---
 
